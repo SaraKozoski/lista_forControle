@@ -8,10 +8,16 @@
 
     //ENTRADA
 
-    
+    let maiorNumero = [];
+   
     //PROCESSAMENTO
+    for (let index = 1; index <= 5 ;index++) {
+        const numeros = Number(prompt(`Informe um número:`));
+        maiorNumero.push(numeros)
+    }
 
-    
+    maiorNumero.sort((a, b) => b-a);
+ 
     //SAÍDA
-
+    document.write(`O maior número informado é ${maiorNumero[0]}`)
 </script>

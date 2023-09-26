@@ -10,11 +10,19 @@
     */
 
     //ENTRADA
-
-    
+    let listaDeLetras = ["a", "b", "d", "e", "E", "F", "C", "U", "u", "e", "W", "D"];
+    let novalista = [];
     //PROCESSAMENTO
-
+    for (let index = 0; index < listaDeLetras.length; index++) {
+        const letra = listaDeLetras[index].toLowerCase();
+        
+        if (novalista.includes(letra) == false) {
+            novalista.push(letra);
+            
+        }
+    }
     
     //SAÍDA
+    document.write(`A lista de letras é ${novalista.sort().join(", ")}`)
 
 </script>

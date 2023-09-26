@@ -6,11 +6,23 @@
     */
 
     //ENTRADA
-
-    
+     const numerInicial = Number(prompt(`Insira um número inicial:`));
+     const numeroFinal = Number(prompt(`Insira o número final:`))
+    let par =[];
+    let impar = [];
     //PROCESSAMENTO
-
-    
+    if(numerInicial< numeroFinal){
+        for (let index = 0; index < numeroFinal.length; index++) {
+            if(index % 2 == 0){
+            par.push(index)}
+            else{
+                impar.push(index)
+            }
+        }
+    }
+    else{
+        alert(`Erro`)
+    }
     //SAÍDA
-
+documet.write(`Os numeros par são ${par} e os impares são ${impar}`)
 </script>

@@ -7,11 +7,14 @@
     */
 
     //ENTRADA
-    
-
+    const quantNotas = Number(prompt(`Qual o número de notas o aluno teve?`));
+    let somaNotas = 0;
     //PROCESSAMENTO
-    
+    for (let index = 1; index <= quantNotas; index++) {
+        const notasAlunos = Number(prompt(`Qual as notas do aluno?`))       
+        somaNotas = somaNotas + notasAlunos;
+    }
 
     //SAÍDA
-
+    document.write(`A média de notas do aluno é ${somaNotas/quantNotas}`)
 </script>
