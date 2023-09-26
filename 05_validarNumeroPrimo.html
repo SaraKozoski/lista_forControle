@@ -6,11 +6,16 @@
     */
 
     //ENTRADA
-    
-
+    const numero = Number(prompt(`Informe um número:`));
+    let ajuda =[];
     //PROCESSAMENTO
-
+    for (let i = 2; i < numero;) {
+       if(numero % i == 0){
+        ajuda.push(i);
+       }
+        
+    }
 
     //SAÍDA
-
+    document.write(`Números primos são: (${ajuda})`)
 </script>

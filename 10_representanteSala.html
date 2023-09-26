@@ -8,11 +8,32 @@
     */
 
     //ENTRADA
-
-
+    const votantes = Number(prompt(`Insira quanto alunos irão votar:`))
+    let ajuda =[];
+    let candidato1 = [];
+    let candidato2 = [];
+    let candidato3 = [];
+    let votoBranco =[];
     //PROCESSAMENTO
-
-
+    for (let index = 0; index < 3; index++) {
+        const nomeCandidatos = Number(prompt(`Insira o nome do candidato`));
+        ajuda.push(nomeCandidatos);
+    }
+    for (let index = 0; index < votantes; index++) {
+        const voto = prompt(`Insira em qual candidato quer votar: (${ajuda[0]} | ${ajuda[1]} | ${ajuda[2]})`)
+         if(voto == ajuda[0]){
+            candidato1.push(voto)
+         }
+         else if(voto == ajuda[1]){
+            candidato2.push(voto)
+         }
+         else if(voto == ajuda[2]){
+            candidato3.push(voto)
+         }
+         else{
+            votoBranco.push(voto)
+         }
+    }
     //SAÍDA
-
+    document.write(`O número de candidatos votantes `)
 </script>
