@@ -5,12 +5,15 @@
     */
 
     //ENTRADA
+    let ajuda = [];
     //PROCESSAMENTO
-    for (let index = 1; index <= 100; index++) {
-        
+    for (let index = 0; index <= 100; index++) {
+        if(index % 3 == 0){
+            ajuda.push(index)
+        }
         
     }
 
     //SAÍDA
-
+    document.write(`Os multiplos de três são ${ajuda} `)
 </script>

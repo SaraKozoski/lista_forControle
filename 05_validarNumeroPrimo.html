@@ -9,13 +9,17 @@
     const numero = Number(prompt(`Informe um número:`));
     let ajuda =[];
     //PROCESSAMENTO
-    for (let i = 2; i < numero;) {
-       if(numero % i == 0){
-        ajuda.push(i);
+    for (let i = 2; i < numero; i++) {
+        ajuda.push(numero%i);
        }
         
-    }
+       if (ajuda.includes[0] == false) {
+         alert(`Esse número  não é primo`)
+       }
+       else{
+        alert(`Esse número é primo`)
+       }
 
     //SAÍDA
-    document.write(`Números primos são: (${ajuda})`)
+
 </script>

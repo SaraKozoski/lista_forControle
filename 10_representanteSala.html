@@ -4,16 +4,17 @@
     PROBLEMA
     Peça para o programa perguntar ao professor regente o nome dos três candidatos a representante da sala.
     Peça também para o programa perguntar ao professor regente a quantidade de alunos votantes.
-    Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação, com o quantitativo de votos e também a porcentagem de votos de cada candidato a representante de sala.
+    Desenvolva um programa que armazene o voto de cada aluno da sala e apresente o resultado da votação, com o quantitativo de votos e também a 
+    porcentagem de votos de cada candidato a representante de sala.
     */
 
     //ENTRADA
     const votantes = Number(prompt(`Insira quanto alunos irão votar:`))
     let ajuda =[];
-    let candidato1 = [];
-    let candidato2 = [];
-    let candidato3 = [];
-    let votoBranco =[];
+    let candidato1 = 0;
+    let candidato2 = 0;
+    let candidato3 = 0;
+    let votoBranco = 0;
     //PROCESSAMENTO
     for (let index = 0; index < 3; index++) {
         const nomeCandidatos = Number(prompt(`Insira o nome do candidato`));
@@ -22,18 +23,19 @@
     for (let index = 0; index < votantes; index++) {
         const voto = prompt(`Insira em qual candidato quer votar: (${ajuda[0]} | ${ajuda[1]} | ${ajuda[2]})`)
          if(voto == ajuda[0]){
-            candidato1.push(voto)
+            candidato1++
          }
          else if(voto == ajuda[1]){
-            candidato2.push(voto)
+            candidato2++
          }
          else if(voto == ajuda[2]){
-            candidato3.push(voto)
+            candidato3++
          }
          else{
             votoBranco.push(voto)
          }
     }
     //SAÍDA
-    document.write(`O número de candidatos votantes `)
+    document.write(`O número de candidatos votantes que iriam votar seriam ${votantes}, ${ajuda[0]} teve ${candidato1*100/votantes}%,
+    ${ajuda[1]} teve ${candidato2*100/votantes}%, ${ajuda[2]} teve ${candidato3*100/votantes}%`)
 </script>
